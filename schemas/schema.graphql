@@ -1,0 +1,13 @@
+# import RandomDie from '../schemas/Dice.graphql'
+
+scalar DateTime
+
+type Mutation {
+  setMessage(message: String): Boolean
+  delMessage: String
+} 
+type Query {  
+  rollDice(numSides: Int): RandomDie!
+  getMessage: String 
+  getDateTime: DateTime!
+  }
